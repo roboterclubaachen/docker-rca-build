@@ -12,4 +12,5 @@ RUN apt update && \
     add-apt-repository ppa:webupd8team/java && \
     echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | debconf-set-selections && \
     apt-get install -y --no-install-recommends oracle-java8-installer oracle-java8-set-default && \
+    apt-get install -y libreadline-dev libncurses-dev libc6-dev && \
     apt clean all
